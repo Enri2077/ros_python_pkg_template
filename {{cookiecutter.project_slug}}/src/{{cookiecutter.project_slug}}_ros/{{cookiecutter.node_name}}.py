@@ -5,6 +5,7 @@ from __future__ import print_function
 import rospy
 from std_msgs.msg import String
 
+
 class {{cookiecutter.class_name}}:
     def __init__(self):
         pass
