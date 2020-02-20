@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+    <arg name="home_path" default="$(optenv HOME)" />
+
+    <node pkg="{{cookiecutter.project_slug}}" type="{{cookiecutter.node_name}}_node" name="{{cookiecutter.node_name}}" output="screen" required="true" >
+        <param name="param_name" value="param_value" type="double" />
+        <rosparam file="$(find {{cookiecutter.project_slug}})/config/config.yaml" />
+    </node>
+
+</launch> 
