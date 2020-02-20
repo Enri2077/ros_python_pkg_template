@@ -8,13 +8,13 @@ The process of setting up a initial package strucuture in ROS that is also able 
 You need [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) to generate the template on your local machine. You can install it via pip for example:
 
 ```sh
-pip install cookiecutter
+sudo apt install cookiecutter
 ```
 
 After you installed cookiecutter, simply execute the following command in the folder where you want to generate your project:
 
 ```sh
-cookiecutter https://github.com/sbhle/ros_python_pkg_template
+cookiecutter path/to/ros_python_pkg_template
 ```
 
 The final step is to enter your project specifics and your package gets generated automatically.
